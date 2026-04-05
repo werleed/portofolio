@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sulaiman Attah | Tech Entrepreneur & Web Developer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+
+<!-- SCROLL PROGRESS BAR -->
+<div id="scroll-progress"></div>
+
+<!-- PARTICLE CANVAS -->
+<canvas id="particles"></canvas>
+
+<!-- WELCOME POPUP -->
+<div id="welcome-popup" class="popup-overlay">
+  <div class="popup-box animate-popup">
+    <div class="popup-avatar">
+      <img src="profile.jpeg" alt="Sulaiman" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+      <div class="popup-initials" style="display:none">SA</div>
+    </div>
+    <div class="popup-emoji">👋</div>
+    <h2>Welcome!</h2>
+    <p>I'm <strong>Sulaiman Attah</strong> — Tech Entrepreneur, Web Developer & Founder of <strong>Weventures</strong>, based in Kano, Nigeria.</p>
+    <button class="btn-primary" onclick="closePopup()">Explore My Work <i class="fas fa-arrow-right"></i></button>
+  </div>
+</div>
+
+<!-- NAV -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="#hero" class="logo">Werleed<span>.</span></a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#contact" class="btn-nav">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-content">
+    <div class="hero-tag-wrap">
+      <span class="pulse-dot"></span>
+      <p class="hero-tag">Available for Projects</p>
+    </div>
+    <h1>Sulaiman <span class="gradient-text">Attah</span></h1>
+    <h2 class="typewriter" id="typewriter"></h2>
+    <p class="hero-desc">Building scalable African tech products with global impact. Founder of <strong>Weventures</strong>, based in Kano, Nigeria.</p>
+    <div class="hero-btns">
+      <a href="#projects" class="btn-primary btn-glow">View Projects <i class="fas fa-rocket"></i></a>
+      <a href="#contact" class="btn-outline">Get In Touch</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat"><span class="counter" data-target="6">0</span><sup>+</sup><p>Years Exp.</p></div>
+      <div class="stat"><span class="counter" data-target="10">0</span><sup>+</sup><p>Projects</p></div>
+      <div class="stat"><span class="counter" data-target="123">0</span><sup>+</sup><p>Youth Trained</p></div>
+      <div class="stat"><span class="counter" data-target="2">0</span><sup></sup><p>Companies</p></div>
+    </div>
+  </div>
+  <div class="hero-visual">
+    <div class="orbit-ring ring1"></div>
+    <div class="orbit-ring ring2"></div>
+    <div class="avatar-ring">
+      <img src="profile.jpeg" alt="Sulaiman Attah" class="avatar-photo"
+           onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+      <div class="avatar-inner" style="display:none;">SA</div>
+    </div>
+    <div class="floating-badge b1"><i class="fab fa-php"></i> PHP</div>
+    <div class="floating-badge b2"><i class="fab fa-laravel"></i> Laravel</div>
+    <div class="floating-badge b3"><i class="fab fa-js"></i> JS</div>
+    <div class="floating-badge b4"><i class="fas fa-robot"></i> AI</div>
+    <div class="floating-badge b5"><i class="fas fa-shield-alt"></i> Security</div>
+  </div>
+</section>
+
+<!-- BANNER: Weventures -->
+<div class="banner-strip">
+  <div class="banner-inner">
+    <span>🚀 Founder & CEO — Weventures</span>
+    <span class="banner-sep">✦</span>
+    <span>📱 Professional iPhone Software Technician</span>
+    <span class="banner-sep">✦</span>
+    <span>🌍 Building African Tech with Global Impact</span>
+    <span class="banner-sep">✦</span>
+    <span>🤖 AI · FinTech · EduTech · AgroTech</span>
+    <span class="banner-sep">✦</span>
+    <span>🚀 Founder & CEO — Weventures</span>
+    <span class="banner-sep">✦</span>
+    <span>📱 Professional iPhone Software Technician</span>
+    <span class="banner-sep">✦</span>
+    <span>🌍 Building African Tech with Global Impact</span>
+    <span class="banner-sep">✦</span>
+    <span>🤖 AI · FinTech · EduTech · AgroTech</span>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="container">
+    <h2 class="section-title reveal">About <span>Me</span></h2>
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <!-- SVG Cartoon Illustration -->
+        <div class="cartoon-wrap">
+          <svg viewBox="0 0 200 200" class="cartoon-svg" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="100" cy="70" r="40" fill="#4f8ef7" opacity="0.15"/>
+            <circle cx="100" cy="65" r="32" fill="#1e2d4a"/>
+            <circle cx="100" cy="65" r="28" fill="#4f8ef7" opacity="0.3"/>
+            <text x="100" y="73" text-anchor="middle" font-size="28" fill="#4f8ef7">💻</text>
+            <rect x="60" y="110" width="80" height="50" rx="10" fill="#1e2d4a" stroke="#4f8ef7" stroke-width="1.5"/>
+            <text x="100" y="142" text-anchor="middle" font-size="20" fill="#4f8ef7">🚀</text>
+            <circle cx="55" cy="125" r="12" fill="#1e2d4a" stroke="#4f8ef7" stroke-width="1.5"/>
+            <circle cx="145" cy="125" r="12" fill="#1e2d4a" stroke="#4f8ef7" stroke-width="1.5"/>
+            <line x1="55" y1="137" x2="55" y2="165" stroke="#4f8ef7" stroke-width="2"/>
+            <line x1="145" y1="137" x2="145" y2="165" stroke="#4f8ef7" stroke-width="2"/>
+            <ellipse cx="55" cy="168" rx="10" ry="5" fill="#4f8ef7" opacity="0.5"/>
+            <ellipse cx="145" cy="168" rx="10" ry="5" fill="#4f8ef7" opacity="0.5"/>
+            <path d="M 30 90 Q 20 70 35 60" stroke="#4f8ef7" stroke-width="2" fill="none" stroke-dasharray="4"/>
+            <path d="M 170 90 Q 180 70 165 60" stroke="#7c3aed" stroke-width="2" fill="none" stroke-dasharray="4"/>
+          </svg>
+        </div>
+        <p>I'm a multi-skilled Tech Entrepreneur, Web Developer, and IT Professional with over <strong>6 years of experience</strong> across web development, digital product creation, iPhone software repair, and technology leadership.</p>
+        <p>As the <strong>Founder & CEO of Weventures</strong>, I build scalable African tech products with global impact — from FinTech and EduTech to AgroTech and AI-powered solutions.</p>
+        <p>I'm also a <strong>Professional iPhone Software Technician</strong>, experienced in data entry, student management systems, e-commerce store development, logo & banner design, customer care, social media management, and YouTube channel management.</p>
+        <p>Currently serving as TVET Coordinator at Muhsaib Charitable Foundation, where I've trained <strong>123+ youth</strong> in technical and vocational skills.</p>
+        <div class="about-links">
+          <a href="https://linkedin.com/in/werleed" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+          <a href="https://github.com/werleed" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+          <a href="mailto:werleedautane@gmail.com"><i class="fas fa-envelope"></i> Email</a>
+        </div>
+      </div>
+      <div class="about-info reveal">
+        <div class="info-card tilt-card">
+          <div class="info-item"><i class="fas fa-map-marker-alt"></i><span>Kano, Nigeria</span></div>
+          <div class="info-item"><i class="fas fa-phone"></i><span>+234 903 947 5752</span></div>
+          <div class="info-item"><i class="fas fa-envelope"></i><span>werleedautane@gmail.com</span></div>
+          <div class="info-item"><i class="fas fa-globe"></i><span>werleedattah.netlify.app</span></div>
+          <div class="info-item"><i class="fas fa-building"></i><span>Founder & CEO — Weventures</span></div>
+          <div class="info-item"><i class="fas fa-mobile-alt"></i><span>iPhone Software Technician</span></div>
+          <div class="info-item"><i class="fas fa-graduation-cap"></i><span>BSc Computer Science (In View)</span></div>
+          <div class="info-item"><i class="fas fa-language"></i><span>English & Hausa</span></div>
+        </div>
+        <div class="interests">
+          <p class="interests-title">Interests</p>
+          <div class="tags">
+            <span>AI</span><span>Cybersecurity</span><span>FinTech</span>
+            <span>EduTech</span><span>AgroTech</span><span>DevOps</span>
+            <span>Cloud Computing</span><span>Startups</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COMPANIES BANNER -->
+<div class="companies-section">
+  <div class="container">
+    <p class="companies-label">What I Do</p>
+    <div class="companies-row">
+      <div class="company-badge tilt-card">
+        <div class="company-icon" style="background:linear-gradient(135deg,#7c3aed,#4f8ef7)"><i class="fas fa-lightbulb"></i></div>
+        <div><h4>Weventures</h4><p>Innovation & Startup Ventures</p></div>
+      </div>
+      <div class="company-badge tilt-card">
+        <div class="company-icon" style="background:linear-gradient(135deg,#06d6a0,#4f8ef7)"><i class="fas fa-mobile-alt"></i></div>
+        <div><h4>iPhone Technician</h4><p>Professional Software Repair</p></div>
+      </div>
+      <div class="company-badge tilt-card">
+        <div class="company-icon" style="background:linear-gradient(135deg,#f59e0b,#ef4444)"><i class="fas fa-store"></i></div>
+        <div><h4>E-Commerce Dev</h4><p>Online Store Development</p></div>
+      </div>
+      <div class="company-badge tilt-card">
+        <div class="company-icon" style="background:linear-gradient(135deg,#ec4899,#7c3aed)"><i class="fas fa-hashtag"></i></div>
+        <div><h4>Social Media Mgmt</h4><p>Content & YouTube Management</p></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="container">
+    <h2 class="section-title reveal">Technical <span>Skills</span></h2>
+    <div class="skills-grid">
+      <div class="skill-card tilt-card reveal"><div class="skill-glow"></div><i class="fas fa-code"></i><h3>Programming</h3><p>PHP, HTML5, CSS3, JavaScript</p></div>
+      <div class="skill-card tilt-card reveal"><div class="skill-glow"></div><i class="fas fa-layer-group"></i><h3>Frameworks</h3><p>Laravel, Bootstrap</p></div>
+      <div class="skill-card tilt-card reveal"><div class="skill-glow"></div><i class="fas fa-database"></i><h3>Database</h3><p>MySQL, phpMyAdmin</p></div>
+      <div class="skill-card tilt-card reveal"><div class="skill-glow"></div><i class="fab fa-wordpress"></i><h3>CMS</h3><p>WordPress</p></div>
+      <div class="skill-card tilt-card reveal"><div class="skill-glow"></div><i class="fas fa-tools"></i><h3>Dev Tools</h3><p>Git, GitHub, VS Code, XAMPP</p></div>
+      <div class="skill-card tilt-card reveal"><div class="skill-glow"></div><i class="fas fa-rocket"></i><h3>Deployment</h3><p>cPanel, Netlify, Web Hosting</p></div>
+      <div class="skill-card tilt-card reveal"><div class="skill-glow"></div><i class="fas fa-plug"></i><h3>APIs</h3><p>Telegram, Payment Gateway, REST</p></div>
+      <div class="skill-card tilt-card reveal"><div class="skill-glow"></div><i class="fas fa-paint-brush"></i><h3>Design</h3><p>Graphics, UI/UX, Figma</p></div>
+      <div class="skill-card tilt-card reveal"><div class="skill-glow"></div><i class="fas fa-server"></i><h3>Other Tools</h3><p>Docker, Kubernetes, Postman</p></div>
+      <div class="skill-card tilt-card reveal"><div class="skill-glow"></div><i class="fab fa-apple"></i><h3>iPhone Technician</h3><p>Professional iOS Software Repair & Diagnostics</p></div>
+      <div class="skill-card tilt-card reveal"><div class="skill-glow"></div><i class="fas fa-store"></i><h3>E-Commerce Dev</h3><p>Online Store Setup, WooCommerce, Shopify</p></div>
+      <div class="skill-card tilt-card reveal"><div class="skill-glow"></div><i class="fas fa-keyboard"></i><h3>Data Entry</h3><p>Accurate & Fast Data Processing</p></div>
+      <div class="skill-card tilt-card reveal"><div class="skill-glow"></div><i class="fas fa-user-graduate"></i><h3>Student Management</h3><p>School Management Systems & Portals</p></div>
+      <div class="skill-card tilt-card reveal"><div class="skill-glow"></div><i class="fas fa-image"></i><h3>Logo & Banner Design</h3><p>Brand Identity, Canva, Photoshop</p></div>
+      <div class="skill-card tilt-card reveal"><div class="skill-glow"></div><i class="fas fa-headset"></i><h3>Customer Care</h3><p>Support, CRM & Client Relations</p></div>
+      <div class="skill-card tilt-card reveal"><div class="skill-glow"></div><i class="fas fa-hashtag"></i><h3>Social Media Mgmt</h3><p>Content Strategy, Scheduling & Growth</p></div>
+      <div class="skill-card tilt-card reveal"><div class="skill-glow"></div><i class="fab fa-youtube"></i><h3>YouTube Management</h3><p>Channel Growth, SEO & Content Planning</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="container">
+    <h2 class="section-title reveal">Featured <span>Projects</span></h2>
+    <div class="projects-grid">
+
+      <div class="project-card tilt-card reveal project-featured">
+        <div class="project-card-glow"></div>
+        <div class="project-badge">🌍 Africa-First</div>
+        <div class="project-icon"><i class="fas fa-exchange-alt"></i></div>
+        <h3>Earnqu</h3>
+        <p>Borderless instant money transfer built for Africans. Send and receive funds across African countries instantly — no delays, no currency stress, no middlemen.</p>
+        <div class="project-tags"><span>FinTech</span><span>Africa</span><span>Transfers</span><span>Borderless</span></div>
+        <div class="project-actions">
+          <a href="mailto:werleedautane@gmail.com?subject=Demo Request: Earnqu" class="btn-demo"><i class="fas fa-play"></i> Request Demo</a>
+          <a href="https://github.com/werleed" target="_blank" class="btn-code"><i class="fab fa-github"></i> Source Code</a>
+        </div>
+      </div>
+
+      <div class="project-card tilt-card reveal project-featured">
+        <div class="project-card-glow"></div>
+        <div class="project-badge">♻️ AI-Powered</div>
+        <div class="project-icon"><i class="fas fa-recycle"></i></div>
+        <h3>Nabola</h3>
+        <p>AI-powered waste-to-cash management system. Nabola turns waste into value — connecting individuals and businesses to smart recycling rewards and sustainable income streams.</p>
+        <div class="project-tags"><span>AI</span><span>GreenTech</span><span>Waste Management</span><span>Sustainability</span></div>
+        <div class="project-actions">
+          <a href="mailto:werleedautane@gmail.com?subject=Demo Request: Nabola" class="btn-demo"><i class="fas fa-play"></i> Request Demo</a>
+          <a href="https://github.com/werleed" target="_blank" class="btn-code"><i class="fab fa-github"></i> Source Code</a>
+        </div>
+      </div>
+
+      <div class="project-card tilt-card reveal project-featured">
+        <div class="project-card-glow"></div>
+        <div class="project-badge">🚢 Import · Export</div>
+        <div class="project-icon"><i class="fas fa-ship"></i></div>
+        <h3>Bybimport</h3>
+        <p>E-commerce platform for stress-free importation and exportation of goods between China and Nigeria. No currency conversion headaches, no delays — just seamless cross-border trade.</p>
+        <div class="project-tags"><span>E-Commerce</span><span>Import/Export</span><span>China-Nigeria</span><span>Trade</span></div>
+        <div class="project-actions">
+          <a href="mailto:werleedautane@gmail.com?subject=Demo Request: Bybimport" class="btn-demo"><i class="fas fa-play"></i> Request Demo</a>
+          <a href="https://github.com/werleed" target="_blank" class="btn-code"><i class="fab fa-github"></i> Source Code</a>
+        </div>
+      </div>
+
+      <div class="project-card tilt-card reveal" data-project="sentry">
+        <div class="project-card-glow"></div>
+        <div class="project-icon"><i class="fas fa-shield-alt"></i></div>
+        <h3>Sentry</h3>
+        <p>Security & monitoring technology concept for real-time protection.</p>
+        <div class="project-tags"><span>Security</span><span>Monitoring</span></div>
+        <div class="project-actions">
+          <a href="mailto:werleedautane@gmail.com?subject=Demo Request: Sentry" class="btn-demo"><i class="fas fa-play"></i> Request Demo</a>
+          <a href="https://github.com/werleed" target="_blank" class="btn-code"><i class="fab fa-github"></i> Source Code</a>
+        </div>
+      </div>
+
+      <div class="project-card tilt-card reveal" data-project="sentryai">
+        <div class="project-card-glow"></div>
+        <div class="project-icon"><i class="fas fa-robot"></i></div>
+        <h3>SentryChild AI</h3>
+        <p>AI-powered digital child protection system.</p>
+        <div class="project-tags"><span>AI</span><span>Child Safety</span></div>
+        <div class="project-actions">
+          <a href="mailto:werleedautane@gmail.com?subject=Demo Request: SentryChild AI" class="btn-demo"><i class="fas fa-play"></i> Request Demo</a>
+          <a href="https://github.com/werleed" target="_blank" class="btn-code"><i class="fab fa-github"></i> Source Code</a>
+        </div>
+      </div>
+
+      <div class="project-card tilt-card reveal">
+        <div class="project-card-glow"></div>
+        <div class="project-icon"><i class="fas fa-seedling"></i></div>
+        <h3>ManiLink</h3>
+        <p>Technology platform designed to support African cassava farmers.</p>
+        <div class="project-tags"><span>AgroTech</span><span>Africa</span></div>
+        <div class="project-actions">
+          <a href="mailto:werleedautane@gmail.com?subject=Demo Request: ManiLink" class="btn-demo"><i class="fas fa-play"></i> Request Demo</a>
+          <a href="https://github.com/werleed" target="_blank" class="btn-code"><i class="fab fa-github"></i> Source Code</a>
+        </div>
+      </div>
+
+      <div class="project-card tilt-card reveal">
+        <div class="project-card-glow"></div>
+        <div class="project-icon"><i class="fas fa-globe"></i></div>
+        <h3>Hausanet</h3>
+        <p>Digital platform serving the Hausa community online.</p>
+        <div class="project-tags"><span>Platform</span><span>Community</span></div>
+        <div class="project-actions">
+          <a href="mailto:werleedautane@gmail.com?subject=Demo Request: Hausanet" class="btn-demo"><i class="fas fa-play"></i> Request Demo</a>
+          <a href="https://github.com/werleed" target="_blank" class="btn-code"><i class="fab fa-github"></i> Source Code</a>
+        </div>
+      </div>
+
+      <div class="project-card tilt-card reveal">
+        <div class="project-card-glow"></div>
+        <div class="project-icon"><i class="fas fa-wallet"></i></div>
+        <h3>E-Wallet</h3>
+        <p>Digital payment system prototype for seamless transactions.</p>
+        <div class="project-tags"><span>FinTech</span><span>Payments</span></div>
+        <div class="project-actions">
+          <a href="mailto:werleedautane@gmail.com?subject=Demo Request: E-Wallet" class="btn-demo"><i class="fas fa-play"></i> Request Demo</a>
+          <a href="https://github.com/werleed" target="_blank" class="btn-code"><i class="fab fa-github"></i> Source Code</a>
+        </div>
+      </div>
+
+      <div class="project-card tilt-card reveal">
+        <div class="project-card-glow"></div>
+        <div class="project-icon"><i class="fas fa-credit-card"></i></div>
+        <h3>E-Pay</h3>
+        <p>Online payment platform for digital commerce.</p>
+        <div class="project-tags"><span>FinTech</span><span>E-Commerce</span></div>
+        <div class="project-actions">
+          <a href="mailto:werleedautane@gmail.com?subject=Demo Request: E-Pay" class="btn-demo"><i class="fas fa-play"></i> Request Demo</a>
+          <a href="https://github.com/werleed" target="_blank" class="btn-code"><i class="fab fa-github"></i> Source Code</a>
+        </div>
+      </div>
+
+      <div class="project-card tilt-card reveal">
+        <div class="project-card-glow"></div>
+        <div class="project-icon"><i class="fas fa-graduation-cap"></i></div>
+        <h3>E-Learning Platform</h3>
+        <p>Online education and learning management system.</p>
+        <div class="project-tags"><span>EduTech</span><span>LMS</span></div>
+        <div class="project-actions">
+          <a href="mailto:werleedautane@gmail.com?subject=Demo Request: E-Learning" class="btn-demo"><i class="fas fa-play"></i> Request Demo</a>
+          <a href="https://github.com/werleed" target="_blank" class="btn-code"><i class="fab fa-github"></i> Source Code</a>
+        </div>
+      </div>
+
+      <div class="project-card tilt-card reveal">
+        <div class="project-card-glow"></div>
+        <div class="project-icon"><i class="fas fa-users"></i></div>
+        <h3>IFYF Platform</h3>
+        <p>Digital platform for community engagement and empowerment.</p>
+        <div class="project-tags"><span>Community</span><span>Social Impact</span></div>
+        <div class="project-actions">
+          <a href="mailto:werleedautane@gmail.com?subject=Demo Request: IFYF Platform" class="btn-demo"><i class="fas fa-play"></i> Request Demo</a>
+          <a href="https://github.com/werleed" target="_blank" class="btn-code"><i class="fab fa-github"></i> Source Code</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="container">
+    <h2 class="section-title reveal">Experience & <span>Education</span></h2>
+    <div class="timeline">
+
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content tilt-card">
+          <span class="timeline-date">Current</span>
+          <h3>TVET Coordinator</h3>
+          <p class="timeline-org">Muhsaib Charitable Foundation</p>
+          <ul>
+            <li>Lead and manage TVET programs for youth empowerment</li>
+            <li>Trained 123+ youth, enhancing technical skills and employability</li>
+            <li>Coordinate digital learning initiatives and curriculum development</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content tilt-card">
+          <span class="timeline-date">Current</span>
+          <h3>IT Admin & Tutor</h3>
+          <p class="timeline-org">Muhsaib Model School</p>
+          <ul>
+            <li>Manage IT infrastructure serving 143+ students and staff</li>
+            <li>Maintain digital education systems and e-learning platforms</li>
+            <li>Ensure network security and data protection protocols</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content tilt-card">
+          <span class="timeline-date">Ongoing</span>
+          <h3>Founder & CEO — Weventures</h3>
+          <p class="timeline-org">Weventures</p>
+          <ul>
+            <li>Building innovative digital solutions: web platforms, payment systems, educational tools</li>
+            <li>Leading a portfolio of 10+ digital products and startups</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content tilt-card">
+          <span class="timeline-date">Jun 2019 – Feb 2020</span>
+          <h3>Web Developer (Volunteer/Intern)</h3>
+          <p class="timeline-org">Bashtech, Kano</p>
+          <ul>
+            <li>Built and maintained client websites with a development team</li>
+            <li>Improved website performance and user experience</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-item edu reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content tilt-card">
+          <span class="timeline-date">In View</span>
+          <h3>BSc Computer Science</h3>
+          <p class="timeline-org">Kano University of Science and Technology, Wudil</p>
+        </div>
+      </div>
+
+      <div class="timeline-item edu reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content tilt-card">
+          <span class="timeline-date">Completed</span>
+          <h3>National Diploma – Science Laboratory Technology</h3>
+          <p class="timeline-org">Kano State Polytechnic · CGPA: 2.67</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="certs">
+      <h3>Certifications & Awards</h3>
+      <div class="certs-grid">
+        <div class="cert-item reveal"><i class="fas fa-certificate"></i> HTML & CSS Certification (2018)</div>
+        <div class="cert-item reveal"><i class="fas fa-certificate"></i> HTML Certification (2019)</div>
+        <div class="cert-item reveal"><i class="fas fa-certificate"></i> Certificate in PHP (2021)</div>
+        <div class="cert-item reveal"><i class="fas fa-certificate"></i> Project Management (2021)</div>
+        <div class="cert-item reveal"><i class="fas fa-certificate"></i> Technical Support Fundamentals (2022)</div>
+        <div class="cert-item award reveal"><i class="fas fa-trophy"></i> Developer of the Year (2019)</div>
+        <div class="cert-item award reveal"><i class="fas fa-trophy"></i> Developer of the Year (2020)</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="container">
+    <h2 class="section-title reveal">Get In <span>Touch</span></h2>
+    <p class="contact-sub">Have a project in mind or want to collaborate? Let's talk.</p>
+    <div class="contact-grid">
+      <div class="contact-info">
+        <a href="mailto:werleedautane@gmail.com" class="contact-card reveal tilt-card">
+          <i class="fas fa-envelope"></i>
+          <div><p>Email</p><span>werleedautane@gmail.com</span></div>
+        </a>
+        <a href="tel:+2349039475752" class="contact-card reveal tilt-card">
+          <i class="fas fa-phone"></i>
+          <div><p>Phone</p><span>+234 903 947 5752</span></div>
+        </a>
+        <a href="https://linkedin.com/in/werleed" target="_blank" class="contact-card reveal tilt-card">
+          <i class="fab fa-linkedin"></i>
+          <div><p>LinkedIn</p><span>linkedin.com/in/werleed</span></div>
+        </a>
+        <div class="contact-card reveal tilt-card">
+          <i class="fas fa-map-marker-alt"></i>
+          <div><p>Location</p><span>Kano, Nigeria</span></div>
+        </div>
+      </div>
+      <form class="contact-form reveal" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" onsubmit="handleSubmit(event)">
+        <input type="hidden" name="form-name" value="contact" />
+        <input type="hidden" name="bot-field" />
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <input type="text" name="subject" placeholder="Subject" />
+        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit" class="btn-primary btn-glow">Send Message <i class="fas fa-paper-plane"></i></button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-cartoon">
+    <svg viewBox="0 0 400 80" xmlns="http://www.w3.org/2000/svg" class="footer-wave">
+      <path d="M0,40 Q50,10 100,40 Q150,70 200,40 Q250,10 300,40 Q350,70 400,40 L400,80 L0,80 Z" fill="#0f1628"/>
+    </svg>
+  </div>
+  <div class="footer-inner">
+    <p class="footer-name">Sulaiman Abdulsalam Attah</p>
+    <p class="footer-title">Tech Entrepreneur · Web Developer · iPhone Technician · Founder of Weventures</p>
+    <div class="footer-socials">
+      <a href="https://facebook.com/werleed" target="_blank" class="social-btn fb" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://wa.me/2349039475752" target="_blank" class="social-btn wa" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+      <a href="https://instagram.com/werleed" target="_blank" class="social-btn ig" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="https://t.me/werleed" target="_blank" class="social-btn tg" aria-label="Telegram"><i class="fab fa-telegram-plane"></i></a>
+      <a href="https://linkedin.com/in/werleed" target="_blank" class="social-btn li" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://github.com/werleed" target="_blank" class="social-btn gh" aria-label="GitHub"><i class="fab fa-github"></i></a>
+      <a href="https://youtube.com/@werleed" target="_blank" class="social-btn yt" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+      <a href="mailto:werleedautane@gmail.com" class="social-btn em" aria-label="Email"><i class="fas fa-envelope"></i></a>
+    </div>
+    <p class="footer-copy">© 2026 Sulaiman Attah · Built with ❤️ from Kano, Nigeria</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
